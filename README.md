@@ -1,4 +1,4 @@
 # QAEs
-Denoising quantum states with Quantum Autoencoders
+Denoising quantum states with Quantum Autoencoders.
 
-Coming soon !
+See the article here https://arxiv.org/abs/2012.14714
