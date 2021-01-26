@@ -84,7 +84,7 @@ if __name__ == "__main__":
     
     # Create QAE and load weights
     QAE = QNN([2,1,2])
-    K = np.load('/Users/tomachache/Downloads/Columbia/Spring 2020/Quantum Computing - Theory and Practice/Project/Saved_model/Depolarizing_channel/K-2,1,2. p = 0.2. 100 pairs, eps = 0.1. eta = 0.25. Depolarizing channel.npy')
+    K = np.load('Saved_models/Depolarizing_channel/K-2,1,2. p = 0.2. 100 pairs, eps = 0.1. eta = 0.25. Depolarizing channel.npy')
     QAE.set_K(K)
     
     # Create noisy states
