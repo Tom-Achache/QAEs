@@ -6,10 +6,11 @@ Created on Mon Jan 25 18:21:20 2021
 @author: tomachache
 """
 
-from qiskit import *
 import numpy as np
-import time
 from scipy import linalg
+import time
+
+from qiskit import *
 from qiskit.extensions import UnitaryGate
 
 
