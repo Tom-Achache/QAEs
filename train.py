@@ -8,6 +8,7 @@ Created on Mon Jan 25 18:34:59 2021
 
 import numpy as np
 import matplotlib.pyplot as plt
+
 from QNN import QNN
 from State_preparation import state_preparation
 
@@ -68,8 +69,8 @@ if __name__ == "__main__":
                            validation_states = val_states)#, run_in_batch = True)
     
     # Save training and validation fidelities
-    #np.save('train_fid.npy', np.array(train_fid))
-    #np.save('val_fid.npy', np.array(val_fid))
+    np.save('train_fid.npy', np.array(train_fid))
+    np.save('val_fid.npy', np.array(val_fid))
     
     # Test the fidelity after training
     final_fid = my_QNN.test(test_states)
