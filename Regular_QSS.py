@@ -6,8 +6,9 @@ Created on Mon Jan 25 18:03:41 2021
 @author: tomachache
 """
 
-from qiskit import *
 import numpy as np
+
+from qiskit import *
 
 
 # Create regular QSS circuit
