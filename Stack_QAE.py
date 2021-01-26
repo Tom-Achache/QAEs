@@ -6,13 +6,15 @@ Created on Mon Jan 25 11:05:28 2021
 @author: tomachache
 """
 
+import numpy as np
+import matplotlib.pyplot as plt
+
 from qiskit import *
 from qiskit.quantum_info.states.measures import state_fidelity
 from qiskit.quantum_info import partial_trace
-from State_preparation import state_preparation
-import numpy as np
-import matplotlib.pyplot as plt
+
 from QNN import QNN
+from State_preparation import state_preparation
 
 
 # Compute fidelity when stacking QAE k times
@@ -84,7 +86,7 @@ if __name__ == "__main__":
     
     # Create QAE and load weights
     QAE = QNN([3,1,3])
-    K = np.load('/Users/tomachache/Downloads/Columbia/Spring 2020/Quantum Computing - Theory and Practice/Project/Saved_model/Depolarizing_channel/K-3,1,3. p = 0.2. 150 pairs, eps = 0.1. eta = 0.25. Depolarizing channel.npy')
+    K = np.load('Saved_models/Depolarizing_channel/K-3,1,3. p = 0.2. 150 pairs, eps = 0.1. eta = 0.25. Depolarizing channel.npy')
     QAE.set_K(K)
     
     # Create test states
