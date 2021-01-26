@@ -6,8 +6,10 @@ Created on Mon Jan 25 18:40:07 2021
 @author: tomachache
 """
 
-from qiskit import *
 import numpy as np
+
+from qiskit import *
+
 
 # Various state preparation
 def state_preparation(m, name, p): 
