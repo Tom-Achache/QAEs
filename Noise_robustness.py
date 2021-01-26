@@ -49,7 +49,7 @@ if __name__ == "__main__":
     
     # Create QAE and load weights
     QAE = QNN([3,1,3])
-    K = np.load('/Users/tomachache/Downloads/Columbia/Spring 2020/Quantum Computing - Theory and Practice/Project/Saved_model/Depolarizing_channel/K-3,1,3. p = 0.2. 150 pairs, eps = 0.1. eta = 0.25. Depolarizing channel.npy')
+    K = np.load('Saved_models/Depolarizing_channel/K-3,1,3. p = 0.2. 150 pairs, eps = 0.1. eta = 0.25. Depolarizing channel.npy')
     QAE.set_K(K)
     
     # Print coefficients K
